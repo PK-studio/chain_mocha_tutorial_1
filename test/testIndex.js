@@ -10,6 +10,6 @@ describe("Init all", () => {
 describe("Test function in myApp", () => {
   const addNum = myApp.addNum;
   it("expect addNum(2,2) to return 4", () => {
-    expect(addNum(2,2).to.equle(4))
+    expect(addNum(2,2).to.equle(4));
   })
 })
