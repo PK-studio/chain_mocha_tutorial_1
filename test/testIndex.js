@@ -27,13 +27,13 @@ describe("Test function in myApp", () => {
     it("expect checkArray and return 0", () => {
       expect(checkArray()).to.equal(0);
     });
-    // it("expect add '1' and '10' and '100' to array and return array", () => {
-    //   addNumToArray(1).then( ()=>{
-    //     return addNumToArray(10);
-    //   }).then( () => {
-    //     return addNumToArray(100);
-    //   }); 
-    //   expect(checkArray()).to.equal(111);
-    // })
+    it("expect add '1' and '10' and '100' to array and return array", () => {
+      addNumToArray(1).then( ()=>{
+        return addNumToArray(10);
+      }).then( () => {
+        return addNumToArray(100);
+      }); 
+      expect(checkArray()).to.equal(111);
+    })
   })
 })
