@@ -1,5 +1,5 @@
-const expect = require('./node_modules/chai').expect;
-const myApp = require("./app");
+const expect = require('chai').expect;
+const myApp = require("../index");
 
 describe("Init all", () => {
   it("should load module app.js", () => {
