@@ -8,11 +8,11 @@ describe("Init all", () => {
 })
 
 describe("Test function in myApp", () => {
-  const addNum = myApp.addNum;
+  const summary = myApp.summary;
   it("expect addNum(2,2) to return 4", () => {
-    expect(addNum(1,2)).to.equal(3);
+    expect(summary(1,2)).to.equal(3);
   });
-  it("expect reduce numbers 1,3,5,100 and return 108", () => {
-    expect(addNum(1,3,5,100),to.equal(108));
+  it("expect summarize numbers 1,3,4,100 and return 108", () => {
+    expect(summary(1,3,4,100)).to.equal(108);
   })
 })

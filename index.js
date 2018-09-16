@@ -1,6 +1,6 @@
 const myApp = {
-  addNum: (...args)=>{
-    const reducer = (nextNum, currentValue)=> nextNum+currentValue;
+  summary: (...args)=>{
+    const reducer = (nextNum, currentValue) => {return nextNum + currentValue};
     let sum =  args.reduce(reducer);
     return sum;
   }
