@@ -23,17 +23,18 @@ describe("Test function in myApp", () => {
 
   describe("addNumToArray method: ", () => {
     const addNumToArray = myApp.addNumToArray;
-    const checkArray = myApp.checkArray;
-    it("expect checkArray and return 0", () => {
-      expect(checkArray()).to.equal(0);
+    const arrayValue = myApp.arrayValue;
+    it("expect arrayValue to be 0", () => {
+      expect(arrayValue()).to.equal(0);
     });
-    it("expect add '1' and '10' and '100' to array and return array", () => {
-      addNumToArray(1).then( ()=>{
+    it("expect add '1' and '10' and '100' to array and arrayValue to be 111", () => {
+      addNumToArray(1).then( function(){
         return addNumToArray(10);
-      }).then( () => {
+      }).then( function (){
         return addNumToArray(100);
-      }); 
-      expect(checkArray()).to.equal(111);
+      }).then( function (result){
+        expect(arrayValue()).to.equal(111);
+      })
     })
   })
 })
